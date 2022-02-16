@@ -10,3 +10,4 @@ void InsertAtHead(Node* &head,Node* &tail,int data){
         newNode->next = head;
         head = newNode;
     }
+}
