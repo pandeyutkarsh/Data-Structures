@@ -125,6 +125,9 @@ return NULL;
 ListNode* getFirstNode(ListNode* head){
 
 ListNode* intersection = FloyedCircle(head);
+    if(intersection == NULL){
+    return NULL;
+}
 ListNode* slow = head;
 
 while(slow != intersection){
@@ -139,6 +142,9 @@ return slow;
 void removeLoop(ListNode* &head){
 
 ListNode* intersection = FloyedCircle(head);
+    if(intersection == NULL){
+    return NULL;
+}
 ListNode* slow = head;
 ListNode* prev = NULL;
 
